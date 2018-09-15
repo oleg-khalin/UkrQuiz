@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+
+	<meta charset='utf-8'>
+
+	<title>UkrQuiz</title>
+	<meta name='description' content=''>
+
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+
+	<meta property='og:image' content='path/to/image.jpg'>
+	<link rel='shortcut icon' href='img/favicon/favicon.ico' type='image/x-icon'>
+	<link rel='apple-touch-icon' href='img/favicon/apple-touch-icon.png'>
+	<link rel='apple-touch-icon' sizes='72x72' href='img/favicon/apple-touch-icon-72x72.png'>
+	<link rel='apple-touch-icon' sizes='114x114' href='img/favicon/apple-touch-icon-114x114.png'>
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name='theme-color' content='#394b5f'>
+	<!-- Windows Phone -->
+	<meta name='msapplication-navbutton-color' content='#394b5f'>
+	<!-- iOS Safari -->
+	<meta name='apple-mobile-web-app-status-bar-style' content='#394b5f'>
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #394b5f; }</style>
+
+</head>
+
+<body class='dark'>
+	<header class='head'>
+			<div class='container'>
+				<div class='row'>
+					<div class='col-md-3 col-sm-6 col-xs-3'>
+						<a href='index.html' class='logo'><img src='img/logo.svg' alt='Logo'></a>
+					</div>
+					<div class='col-lg-2 col-lg-push-7 col-md-9 col-sm-6 col-xs-9'>
+						<div class='head-login-wrap'>
+							<div class='head-login'>
+								<a href='#popup-login' class='popup-content'>Вхід</a> / <a href='#popup-signup' class='popup-content'>Реєстрація</a>
+								<div class='hidden'>
+									<div id='popup-login'>
+										<form class='form'>
+											<div class='success-wrap'><!-- Добавить класс active, когда успешно вошел -->
+												<div class='success-content'>
+													<p>Доброго дня!</p>
+													<p>Ви увійшли як login.</p>
+												</div>
+											</div>
+											<label>
+												<span>Ваш логін:</span>
+												<input type='text' name='login' required>
+											</label>
+											<label>
+												<span>Ваш пароль:</span>
+												<input type='text' name='password' required>
+											</label>
+											<div class='button-wrap'>
+												<button class='button'>Вхід</button>
+											</div>
+										</form>
+									</div>
+									<div id='popup-signup'>
+										<form class='tab-item form'>
+											<div class='success-wrap active'><!-- Добавить класс active, когда успешно зарегестрировался -->
+												<div class='success-content'>
+													<p>Доброго дня!</p>
+													<p>Ви успішно зареєструвались як login. Будь ласка підтвердіть свій e-mail.</p>
+												</div>
+											</div>
+											<label>
+												<span>Логін:</span>
+												<input type='text' name='login' required>
+											</label>
+											<label>
+												<span>Пароль:</span>
+												<input type='text' name='password' required>
+											</label>
+											<label>
+												<span>E-Mail:</span>
+												<input type='text' name='email' required>
+											</label>
+											<div class='button-wrap'>
+												<button class='button'>Зареєструватися</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<a href='#' class='hamburger hamburger--spin hidden-lg'>
+								<span class='hamburger-box'>
+									<span class='hamburger-inner'></span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class='col-lg-7 col-lg-pull-2 col-md-12 col-sm-12 col-xs-12'>
+						<nav class='head-menu'>
+							<ul>
+								<li><a href='index.html'>Головна</a></li>
+								<li><a href='index-theory.html'>Теорія</a></li>
+								<li class='active'><a href='index-tests.html'>Тести</a></li>
+								<li><a href='index-cabinet.html'>Кабінет</a></li>
+								<li><a href='index-rating.html'>Рейтинг</a></li>
+								<li><a href='index-reviews.html'>Відгуки</a></li>
+								<li><a href='index-creators.html'>Розробники</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+	</header>
+	<section class='s-theory'>
+		<div class='container'>
+			<div class='row'>
+				<div class='h-wrapper'>
+					<h2 class='h2'>Тести</h2>
+				</div>
+				<div class='theory-filter'>
+					<ul>
+						<li class='theory-filter-item active' data-filter='.theory-section-1'>Фонетика, графіка</li>
+						<li class='theory-filter-item' data-filter='.theory-section-2'>Орфоепія, орфографія</li>
+						<li class='theory-filter-item' data-filter='.theory-section-3'>Лексикологія, фразеологія</li>
+						<li class='theory-filter-item' data-filter='.theory-section-4'>Будова слова</li>
+						<li class='theory-filter-item' data-filter='.theory-section-5'>Морфологія</li>
+						<li class='theory-filter-item' data-filter='.theory-section-6'>Просте речення</li>
+						<li class='theory-filter-item' data-filter='.theory-section-7'>Складне речення</li>
+						<li class='theory-filter-item' data-filter='.theory-section-8'>Пряма мова</li>
+					</ul>
+				</div>
+				<div class='theory-sections clearfix'>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-1'>
+						<img src='img/theory-sections/1.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Голосні, приголосні звуки</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-2'>
+						<img src='img/theory-sections/2.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Уподібнення приголосних</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-2'>
+						<img src='img/theory-sections/3.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Наголоси</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-2'>
+						<img src='img/theory-sections/4.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Спрощення</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-2'>
+						<img src='img/theory-sections/5.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Милозвучність</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-2'>
+						<img src='img/theory-sections/6.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Слова іншомовного походження</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-2'>
+						<img src='img/theory-sections/7.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Правопис м'якого знака</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-2'>
+						<img src='img/theory-sections/8.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Правопис апострофа</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-2'>
+						<img src='img/theory-sections/9.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Подвоєння</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-2'>
+						<img src='img/theory-sections/10.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Правопис префіксів</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-3'>
+						<img src='img/theory-sections/11.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Лексика</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-3'>
+						<img src='img/theory-sections/12.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Фразеологія</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-4'>
+						<img src='img/theory-sections/13.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Словотворення</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-5'>
+						<img src='img/theory-sections/14.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Іменник</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-5'>
+						<img src='img/theory-sections/15.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Прикметник</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-5'>
+						<img src='img/theory-sections/16.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Числівник</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-5'>
+						<img src='img/theory-sections/17.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Займенник</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-5'>
+						<img src='img/theory-sections/18.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Дієслово</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-5'>
+						<img src='img/theory-sections/19.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Дієприкметник</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-5'>
+						<img src='img/theory-sections/20.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Дієприслівник</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-5'>
+						<img src='img/theory-sections/21.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Прислівник</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-5'>
+						<img src='img/theory-sections/22.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Прийменник</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-5'>
+						<img src='img/theory-sections/23.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Частка</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-5'>
+						<img src='img/theory-sections/24.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Сполучник</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-5'>
+						<img src='img/theory-sections/25.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Узагальнення</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-6'>
+						<img src='img/theory-sections/26.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Словосполучення</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-6'>
+						<img src='img/theory-sections/27.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Головні члени речення</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-6'>
+						<img src='img/theory-sections/28.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Другорядні члени речення</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-6'>
+						<img src='img/theory-sections/29.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Односкладні речення</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-6'>
+						<img src='img/theory-sections/30.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Узагальнення</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-7'>
+						<img src='img/theory-sections/31.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Складносурядне речення</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-7'>
+						<img src='img/theory-sections/32.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Складнопідрядне речення</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-7'>
+						<img src='img/theory-sections/33.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Безсполучникові речення</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-7'>
+						<img src='img/theory-sections/34.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Узагальнення</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+					<div class='col-md-3 col-sm-6 mix theory-section theory-section-8'>
+						<img src='img/theory-sections/35.jpg' alt='Alt'>
+						<div class='theory-section-content'>
+							<h3 class='h3'>Розділові знаки при прямій мові</h3>
+							<a href='#'>Переглянути</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<link rel='stylesheet' href='css/main.min.css'>
+	<script src='js/scripts.min.js'></script>
+
+</body>
+</html>

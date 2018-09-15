@@ -1,0 +1,192 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	body:not(.ishome)
+		.head
+			font-size: 14px
+			&-menu
+				display: none
+				min-width: 290px
+				text-align: right
+				float: right
+				background-color: darken($main, 15)
+				top: 10px
+				border-bottom: darken($main, 15) 4px solid
+				border-top: darken($main, 15) 4px solid
+				position: absolute
+				right: 15px
+				z-index: 2
+				ul
+					li
+						display: block
+						padding: 0
+						line-height: 0
+						a
+							display: block
+							font-size: 13px
+							line-height: 48px
+							padding: 0 20px
+							text-transform: uppercase
+							text-decoration: none
+							border-bottom: 1px solid darken($main, 10)
+							color: $white
+							&:hover
+								background-color: $main
+								color: $accent
+						&.active
+							a
+								background-color: darken($main, 5)
+								text-decoration: none
+								font-weight: bold
+								color: $accent
+			&-login
+				padding-right: 50px
+		&.light
+			.head
+				&-menu
+					background-color: darken($white, 15)
+					border-bottom: darken($white, 15) 4px solid
+					border-top: darken($white, 15) 4px solid
+					ul
+						li
+							a
+								border-bottom: 1px solid darken($white, 10)
+								color: $main
+								&:hover
+									background-color: $white
+									color: $main
+							&.active
+								a
+									background-color: darken($white, 5)
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.ishome
+		.head
+			font-size: 14px
+			&-menu
+				display: none
+				min-width: 290px
+				text-align: right
+				float: right
+				background-color: darken($main, 15)
+				top: 10px
+				border-bottom: darken($main, 15) 4px solid
+				border-top: darken($main, 15) 4px solid
+				position: absolute
+				right: 15px
+				z-index: 2
+				ul
+					li
+						display: block
+						padding: 0
+						line-height: 0
+						a
+							display: block
+							font-size: 13px
+							line-height: 48px
+							padding: 0 20px
+							text-transform: uppercase
+							text-decoration: none
+							border-bottom: 1px solid darken($main, 10)
+							&:hover
+								background-color: $main
+						&.active
+							a
+								background-color: darken($main, 5)
+								text-decoration: none
+								font-weight: bold
+			&-login
+				padding-right: 65px
+		.s-main
+			padding-top: 0
+			ul
+				margin-bottom: 20px
+				text-align: left
+		h1, .h1
+			font-size: 40px
+			margin-top: 0
+			margin-bottom: 10px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.theory-section-content
+		opacity: 1
+		padding-top: 20%
+	h2, .h2
+		font-size: 30px
+	.light
+		.h-wrapper p
+			font-size: 14px
+		h3, .h3
+			font-size: 18px
+	.cabinet-results
+		margin-top: 30px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.head
+		padding-top: 20px
+		min-height: 100px
+		.logo
+			img
+				width: 100px
+		&-login
+			line-height: 60px
+			padding-right: 50px
+	.hamburger
+		top: 15px
+		padding: 6px
+		padding-right: 0
+	.creators-item
+		margin: 0 0 40px
+	.reviews-carosel .owl-nav
+		div
+			left: 10px
+		.owl-next
+			right: 10px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	.ishome
+		.head
+			&-menu
+				display: block !important
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	.head
+		&-menu
+			display: block !important
+

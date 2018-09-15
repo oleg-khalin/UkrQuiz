@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+
+	<meta charset='utf-8'>
+
+	<title>UkrQuiz</title>
+	<meta name='description' content=''>
+
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+
+	<meta property='og:image' content='../path/to/image.jpg'>
+	<link rel='shortcut icon' href='../img/favicon/favicon.ico' type='image/x-icon'>
+	<link rel='apple-touch-icon' href='../img/favicon/apple-touch-icon.png'>
+	<link rel='apple-touch-icon' sizes='72x72' href='../img/favicon/apple-touch-icon-72x72.png'>
+	<link rel='apple-touch-icon' sizes='114x114' href='../img/favicon/apple-touch-icon-114x114.png'>
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name='theme-color' content='#394b5f'>
+	<!-- Windows Phone -->
+	<meta name='msapplication-navbutton-color' content='#394b5f'>
+	<!-- iOS Safari -->
+	<meta name='apple-mobile-web-app-status-bar-style' content='#394b5f'>
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #DFE5EC; }</style>
+
+</head>
+
+<body class='light'>
+	<header class='head'>
+		<div class='container'>
+			<div class='row'>
+				<div class='col-md-3 col-sm-6 col-xs-3'>
+					<a href='index.html' class='logo'><img src='../img/logo.svg' alt='Logo'></a>
+				</div>
+				<div class='col-lg-2 col-lg-push-7 col-md-9 col-sm-6 col-xs-9'>
+					<div class='head-login-wrap'>
+						<div class='head-login'>
+							<a href='#popup-login' class='popup-content'>Вхід</a> / <a href='#popup-signup' class='popup-content'>Реєстрація</a>
+							<div class='hidden'>
+								<div id='popup-login'>
+									<form class='form'>
+										<div class='success-wrap'><!-- Добавить класс active, когда успешно вошел -->
+											<div class='success-content'>
+												<p>Доброго дня!</p>
+												<p>Ви увійшли як login.</p>
+											</div>
+										</div>
+										<label>
+											<span>Ваш логін:</span>
+											<input type='text' name='login' required>
+										</label>
+										<label>
+											<span>Ваш пароль:</span>
+											<input type='text' name='password' required>
+										</label>
+										<div class='button-wrap'>
+											<button class='button'>Вхід</button>
+										</div>
+									</form>
+								</div>
+								<div id='popup-signup'>
+									<form class='tab-item form'>
+										<div class='success-wrap active'><!-- Добавить класс active, когда успешно зарегестрировался -->
+											<div class='success-content'>
+												<p>Доброго дня!</p>
+												<p>Ви успішно зареєструвались як login. Будь ласка підтвердіть свій e-mail.</p>
+											</div>
+										</div>
+										<label>
+											<span>Логін:</span>
+											<input type='text' name='login' required>
+										</label>
+										<label>
+											<span>Пароль:</span>
+											<input type='text' name='password' required>
+										</label>
+										<label>
+											<span>E-Mail:</span>
+											<input type='text' name='email' required>
+										</label>
+										<div class='button-wrap'>
+											<button class='button'>Зареєструватися</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<a href='#' class='hamburger hamburger--spin hidden-lg'>
+							<span class='hamburger-box'>
+								<span class='hamburger-inner'></span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class='col-lg-7 col-lg-pull-2 col-md-12 col-sm-12 col-xs-12'>
+					<nav class='head-menu'>
+						<ul>
+							<li><a href='index.html'>Головна</a></li>
+							<li class='active'><a href='index-theory.html'>Теорія</a></li>
+							<li><a href='index-tests.html'>Тести</a></li>
+							<li><a href='index-cabinet.html'>Кабінет</a></li>
+							<li><a href='index-rating.html'>Рейтинг</a></li>
+							<li><a href='index-reviews.html'>Відгуки</a></li>
+							<li><a href='index-creators.html'>Розробники</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class='s-theory-section'>
+		<div class='container'>
+			<div class='row'>
+				<div class='col-xs-12'>
+					<div class='h-wrapper'>
+						<h2 class='h2'>Фонетика, графіка</h2>
+						<p>Голосні, приголосні звуки</p>
+					</div>
+					<div class='text-center'>
+						<h3 class='h3'>Уподiбнення за глухiстю</h3>
+					</div>
+					<p>Дзвiнкi не оглушуються.</p>
+					<p>Винятки: <i>легко</i> [ле´хко], <i>вогко</i>, <i>кiгтi</i>, <i>дьогтю</i>.</p>
+					<p>Приголосний [з] у префiксі з- чи прийменникові з перед глухими переходить в с. Наприклад: зцілити [с'ц'іли´ти], з кавою [ка´войу].</p>
+					<div class='text-center'>
+						<h3 class='h3'>Уподiбнення за м’якiстю</h3>
+					</div>
+					<p>Попереднiй приголосний стає м’яким пiд впливом наступного.</p>
+					<p>Наприклад: <i>кузня</i> [ку´з′н′а ]. Це стосується лише приголосних [д], [т], [з], [с], [ц], [л], [н], [дз], [р]</p>
+					<div class='text-center'>
+						<h3 class='h3'>Уподiбнення за мiсцем i способом творення</h3>
+					</div>
+					<p>При цiй асимiляцiї зливається або дуже наближається вимова близьких звукiв.</p>
+					<p>Свистячi уподiбнюються наступним шиплячими.</p>
+					<p>Наприклад: <i>безжурний</i> - бе[ж:]у´рний, <i>принісши</i> - прині´[ш:]и.</p>
+					<p>Зверніть увагу! Звуки дж, дз вимовляються як єдиний, злитий звук: дослідження, їжджу, ґудзик, дзига.</p>
+					<p>Проривний ґ слід вимовляти в українських і запозичених словах: ґава, ґанок, дзиґа, ґринджоли. Можна розрізняти на письмі та у вимові слова гніт — ґніт, грати — ґрати, гулі — ґулі.</p>
+					<p>У словах грецького походження треба вимовляти г: географія, гідра, логопед, педагогіка, генетика, логіка, гімназія, гімн. У запозиченнях з латинської та інших мов (крім грецької) г вживається на місці h, а ґ на місці g: гуманізм (humanus), Гегель (Hegel), Гюґо (Hugo), ґатунок (Gattung), ґума (gumma).</p>
+				</div>
+				<div class='button-wrap'>
+					<a href='' class='button'>Пройти тест</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<link rel='stylesheet' href='../css/main.min.css'>
+	<script src='../js/scripts.min.js'></script>
+
+</body>
+</html>
